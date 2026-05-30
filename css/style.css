@@ -28,6 +28,8 @@ header {
     background-color: var(--card-bg);
     padding: 1rem 5%;
     border-bottom: 1px solid #333;
+    width: 100%;
+    position: fixed;
 }
 
 .navbar {
@@ -36,7 +38,9 @@ header {
     align-items: center;
 }
 
-.logo {
+.logo a {
+    text-decoration: none;
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -89,6 +93,7 @@ main {
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
+    margin: 5rem auto 0 auto;
 }
 
 .profile-img-container img {
@@ -98,6 +103,10 @@ main {
 }
 
 /* Portfolio Section (Grid) */
+.portfolio-section {
+    margin: 3rem auto 0 auto;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -115,7 +124,7 @@ main {
 
 .project-card img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 1rem;
@@ -129,6 +138,14 @@ main {
     flex-grow: 1; /* Pushes button to bottom */
     margin-bottom: 1.5rem;
     color: #bbb;
+}
+
+#jamak p {
+    color: orange;
+}
+
+#attendance p {
+    color: orange;
 }
 
 /* --- Buttons --- */
@@ -145,6 +162,9 @@ main {
 
 /* --- Footer (Flexbox) --- */
 footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
     background-color: var(--card-bg);
     text-align: center;
     padding: 2rem;
@@ -201,4 +221,10 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Menambah bayang-bayang untuk efek kedalaman */
     margin: 0 auto; /* Memastikan imej berada di tengah jika ia berada dalam container fleksibel */
     display: block;
+}
+
+.about-page {
+    background-image: url("assets/image/background-profile.jpg");
+    background-size: cover;
+    background-position: center;
 }
